@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/stock.jpg'); /* Add your image path */
+            background-size: cover; /* Cover the entire background */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 40px; /* Increased padding size */
+            width: 300px;
+            text-align: center;
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 24px; /* Increased font size */
+            color: #007bff; /* Changed text color to blue */
+        }
+        .container img {
+            margin-bottom: 40px;
+            border-radius: 50%; /* This will make the image appear as a circle */
+            width: 100px; /* Adjust the width of the image */
+            height: 100px; /* Adjust the height of the image */
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px; /* Decreased padding size */
+            cursor: pointer;
+            width: 50%; /* Adjusted width to fill half the container */
+            display: block;
+            margin: 0 auto; /* Center the button */
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Management System</h1>
+        <img src="img/StockControl.jpg" alt="Icon">
+        <h2>Login</h2>
+        <form action="your_login_endpoint" method="POST">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="adminname" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>
